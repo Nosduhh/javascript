@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro exemeplo JS</title>
+</head>
+<style>
+    @charset "UTF-8";
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-image: linear-gradient(to top, rgba(173, 173, 98, 0.774), rgb(38, 172, 139));
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    h1{
+        text-align: center;
+        padding: 15px;
+    }
+    p{
+        padding: 10px;
+        text-align: justify;
+    }
+</style>
+<body>
+    <h1>Terceiro exemeplo JavaScript</h1>
+    <p>Terceiro exemplo em javaScript.</p>
+    <p>Aqui estamos aprendendo a atribuir variaveis.</p>
+    <script>
+       var num1 = Number(window.prompt('Digite um numero'))
+       var num2 = Number(window.prompt('Digite outro numero'))
+       var soma = num1 + num2 // Variavel soma para somar os valores
+       window.alert(`A soma entre ${num1} e ${num2} foi ${soma}`) //o sinal de + é a concatenação.
+       //(number + number) para adição 
+       //(String + String) para concatenação
+    </script>
+</body>
+</html>
