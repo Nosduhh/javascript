@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciando DOM</title>
+</head>
+<style>
+    @charset "UTF-8";
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-color: rgb(149, 182, 130);
+        color: rgb(0, 0, 0);
+
+    }
+
+    h1 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    p {
+        padding: 10px;
+    }
+
+    div {
+        padding: 10px;
+    }
+
+    fieldset {
+
+        background-color: antiquewhite;
+        width: 350px;
+        padding: 20px;
+        margin-left: 40px;
+        border: 2px solid black;
+        box-shadow: 2px 2px 2px rgba(116, 109, 109, 0.651);
+    }
+
+    legend {
+        font-weight: bolder;
+        font-size: 1.4em;
+    }
+</style>
+
+<body>
+    <h1>Introduzindo DOM</h1>
+    <fieldset>
+        <legend>DOM</legend>
+        <p>Aqui vai o resultado:</p>
+        <div id="msg">
+            Clique em mim.
+        </div>
+
+        <p>Aprendendo a usar <strong>DOM</strong> em javaScript.</p>
+    </fieldset>
+    <script>
+        var p1 = window.document.getElementsByTagName('div')[0]
+        window.document.write('Está escrito assim, '+ p1.innerText)
+        var d = window.document.getElementById('msg')
+    </script>
+</body>
+
+</html>
