@@ -6,15 +6,27 @@
     <title>Aprendendo javaScript</title>
 </head>
 <style>
+    @charset "UTF-8";
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
     body{
         background-color: aquamarine;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2em;
+        padding: 20px;
     }
 </style>
 <body>
     <script>
-        var nome = window.prompt('Qual é o seu nome')
-        document.write(`Seu nome tem ${nome.length} letras.`)
+        var nome = window.prompt('Qual é o seu nome:')
+        document.write(`Seu nome tem <strong> ${nome.length}</strong> letras.<br>`)
+        document.write(`Seu nome com letras <strong> ${nome.toUpperCase()}</strong> maiuscula.<br>`)
+        document.write(`Seu nome com letras minusculas <strong>${nome.toLowerCase()}</strong>.<br>`)
+
+        var salario = window.prompt('Digite seu salário:')
+        document.write(`Seu salário é ${salario.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}`) //Essa linha não está funcionando. 
     </script>
 </body>
 </html>
