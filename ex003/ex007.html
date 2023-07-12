@@ -9,15 +9,18 @@
 <style>
     @charset "UTF-8";
 
+    /*Corpo em CSS*/
+
     /*Palheta de cores:
     - Lilás Claro #CA49F4
+    - Lilás Medio #A919C2
     - Lilás Escuro #580075
     */
 
     * {
         margin: 0px;
         padding: 0px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
     body {
@@ -37,10 +40,14 @@
 
     fieldset {
         width: 400px;
-        height: 250px;
+        height: 300px;
         margin: 40px;
         margin-left: 35%;
         background-color: #CA49F4;
+        border: 2px solid #580075;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgba(48, 47, 47, 0.521);
+
     }
 
     legend {
@@ -52,35 +59,47 @@
     }
 
     input#txtn1.caixas {
-        width: 25px;
+        width: 50px;
         margin: 30px;
-        margin-left: 22%;
+        margin-left: 15%;
         padding: 20px;
-        border: none;
-        border-radius: 5px;
+        border: #7e0c92;
+        border-radius: 50px;
     }
 
     input#txtn2.caixas {
-        width: 25px;
+        width: 50px;
         margin: 30px;
         padding: 20px;
-        border: none;
-        border-radius: 5px;
+        border: #710b83;
+        border-radius: 50px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
     }
 
     input#botão {
         /*Botão de Somar*/
+        width: 50%;
         display: inline-flexbox;
         font-size: 30px;
         border: 1px solid black;
-        margin-left: 35%;
-        margin-bottom: 20px;
+        margin-top: 5px;
+        margin-left: 24%;
+        margin-bottom: 10px;
         padding: 10px;
         padding-top: 5px;
-        border-radius: 5px;
+        border-radius: 20px;
+    }
+
+    input#botão:hover {
+        background-color: #A919C2;
+        color: white;
     }
 
     div#resp {
+        margin-top: 25px;
         padding-left: 30px;
         font-size: 1.2em;
         text-align: left;
@@ -90,28 +109,36 @@
 </style>
 
 <body>
-    <h1>Somando valores</h1>
-    <fieldset>
-        <legend>Soma</legend>
-        <div>
-            <input type="number" name="txtn1" class="caixas" id="txtn1"> +
-            <input type="number" name="txtn2" class="caixas" id="txtn2">
-            <input type="button" value="somar" id="botão" onclick="somar()">
-        </div>
-        <div id="resp">Resultado: </div>
-    </fieldset>
+    <h1>Somando valores</h1> <!--Corpo HTML-->
+    <form>
+        <fieldset>
+            <legend>Soma</legend>
+            <div>
+                <input type="number" name="txtn1" class="caixas" id="txtn1"> +
+                <input type="number" name="txtn2" class="caixas" id="txtn2">
+            </div>
+            <div>
+                <input type="button" value="Somar" id="botão" onclick="somar()">
+                <input type="reset" value="Limpar" id="botão">
+            </div>
+            <div id="resp">Resultado: </div>
+        </fieldset>
+    </form>
     <script>
+
+        //Corpo em JavaScript
+
         function somar() {
             var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.getElementById('txtn2')
             var resp = window.document.getElementById('resp')
-
+            
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
 
-            var soma = n1 + n2 //soma guarda o resultado da soma.
+            var soma = n1 + n2 //soma, guarda o resultado da soma.
             resp.innerHTML = `A soma entre <strong>${n1}</strong> e <strong>${n2}</strong> é igual a ${soma}.`
-
+            
         }
     </script>
 </body>
