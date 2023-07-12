@@ -13,6 +13,16 @@
         padding: 0px;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
+    h1{
+        margin: 20px;
+    }
+    form{
+        margin: 20px;
+    }
+    input[type=number]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+
 </style>
 <body>
     <h1>Radar digital</h1>
@@ -35,7 +45,14 @@
             var result = window.document.getElementById('result')
             var vel = Number(txtvel.value)
 
-            result.innerHTML = `Sua velocidade é ${vel}km/h`
+            result.innerHTML = `Sua velocidade é <strong>${vel}</strong>km/h <br>`
+
+            if(vel >= 60){
+                result.innerHTML += `Você foi multado!`
+            }
+            else{
+                result.innerHTML += `Continue dirigindo com atenção!`
+            }
         }
     </script>
 
