@@ -34,9 +34,12 @@
         </div>
         <div>
             <input type="button" value="Calcular" onclick="calcular()">
+            <input type="button" value="Limpar">
         </div>
-        <div id="result">
-        </div>
+        <!--<div>
+            <input type="button" value="Limpar">
+        </div>-->
+        <div id="result"></div>
     </form>
     <script>
 
@@ -47,13 +50,14 @@
 
             result.innerHTML = `Sua velocidade é <strong>${vel}</strong>km/h <br>`
 
-            if(vel >= 60){
+            if(vel > 60){
                 result.innerHTML += `Você foi multado!`
             }
             else{
                 result.innerHTML += `Continue dirigindo com atenção!`
             }
         }
+        
     </script>
 
 </body>
