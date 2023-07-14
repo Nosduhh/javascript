@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* Palheta de cores do desafio!
+    - Amarelo manhã #FFFA1F
+    - Laranja entardecer #FF921C
+    - Azul anoitecer #011D43
+    */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #6EC257;
+}
+
+header {
+    margin: 15px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #484b47;
+    text-shadow: 2px 2px 2px #74916d;
+}
+
+main {
+    width: 500px;
+    background-color: #C6F7B9;
+    padding: 15px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px rgba(58, 56, 56, 0.507);
+}
+
+footer {
+    color: #484b47;
+    text-align: center;
+    margin: 15px;
+
+}
