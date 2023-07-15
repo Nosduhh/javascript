@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /* Palheta de cores do desafio!
-    - Amarelo manhã #FFFA1F
+    - Laranja manhã #E3BA49 
+    - Compremento laranja manhã #DEA404
     - Laranja entardecer #FF921C
     - Azul anoitecer #011D43
     */
@@ -12,7 +13,10 @@
 }
 
 body {
-    background-color: #6EC257;
+    background-image:linear-gradient(to top, #E3BA49, #DEA404);
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
 }
 
 header {
@@ -34,10 +38,16 @@ main {
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(58, 56, 56, 0.507);
 }
+div#msg{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
 
 footer {
     color: #484b47;
     text-align: center;
-    margin: 15px;
+    margin-top: 40px;
+    
 
 }
