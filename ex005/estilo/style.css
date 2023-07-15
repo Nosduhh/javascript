@@ -33,12 +33,12 @@ h1 {
 section{
     width: 500px;
     background-color: #C6F7B9;
-    padding: 15px;
+    padding: 5px;
     margin: auto;
     border-radius: 5px;
     box-shadow: 3px 3px 3px rgba(58, 56, 56, 0.507);
 }
-div#msg{
+div{
     text-align: center;
     margin-top: 10px;
     font-size: 1.5em;
