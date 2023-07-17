@@ -1,19 +1,36 @@
 @charset "UTF-8";
 
+/* Palheta de cores: 
+    - Cinza escuro #2D5C75
+    - Cinza Claro #A7ADB0 
+    - Azul CLaro #009FF5
+*/
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-
+    background-image:linear-gradient(to top,#2D5C75, #A7ADB0 )  ;
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
 }
 header{
-
+    margin: 20px;
+    padding: 15px;
+    color: white;
+    text-align: center;
 }
 section{
-
+    margin: auto;
+    height: 300px;
+    width: 500px;
+    background-color:#009FF5;
 }
 footer{
-
+    color: white;
+    text-align: center;
+    margin-top: 20px;
 }
