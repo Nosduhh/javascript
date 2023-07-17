@@ -27,7 +27,10 @@ section{
     margin: auto;
     height: 300px;
     width: 500px;
-    background-color:#009FF5;
+    background-color:#0c6697d2;
+    border: 1px solid rgba(0, 0, 0, 0.726);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
 }
 footer{
     color: white;
