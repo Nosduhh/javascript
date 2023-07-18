@@ -1,8 +1,9 @@
 // Coma a pizza! 
 // Usando Do while.
 
-pizza = 1
-do{
+var pizza = 1
+do {
     console.log('Comeu a pizza!')
-    c++
-}while(pizza <=8)
+    pizza++
+} while (pizza <= 8)
+console.log('Parabens você comeu tudo!')
