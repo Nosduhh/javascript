@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*Cores do desafio: 
+ - Laranja #DE8F28
+ - Amarelo Claro #F5D238
+ - Verde abacate #B8DE28
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: #DE8F28;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+}
+
+section {
+    background-color: #B8DE28;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(51, 51, 51, 0.541);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
