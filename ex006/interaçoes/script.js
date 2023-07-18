@@ -16,38 +16,38 @@ function verificar() {
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute('src','imagens/criançamenino.png')
+                img.setAttribute('src', 'imagens/criançamenino.png')
             } else if (idade < 19) {
                 //Adolecente
-                img.setAttribute('src','imagens/adolecentehomem(1).png')
+                img.setAttribute('src', 'imagens/adolecentehomem(1).png')
             } else if (idade < 29) {
                 //jovem
-                img.setAttribute('src','imagens/jovemhomem.png')
+                img.setAttribute('src', 'imagens/jovemhomem.png')
             } else if (idade < 50) {
                 // Adulto 
-                img.setAttribute('src','imagens/homemadulto.png')
+                img.setAttribute('src', 'imagens/homemadulto.png')
             } else {
                 //Idoso
-                img.setAttribute('src','imagens/idosohomem.png')
+                img.setAttribute('src', 'imagens/idosohomem.png')
             }
 
         } else if (sexo[1].checked) {
             genero = 'Mulher'
             if (idade >= 0 && idade < 10) {
                 //criança
-                img.setAttribute('src','imagens/criançamenina.png')
+                img.setAttribute('src', 'imagens/criançamenina.png')
             } else if (idade < 19) {
                 //Adolecente
-                img.setAttribute('src','imagens/adolecentemenina.png')
+                img.setAttribute('src', 'imagens/adolecentemenina.png')
             } else if (idade < 29) {
                 //jovem
-                img.setAttribute('src','imagens/mulherjovem.png')
+                img.setAttribute('src', 'imagens/mulherjovem.png')
             } else if (idade < 50) {
                 // Adulto 
-                img.setAttribute('src','imagens/mulheradulta.png')
+                img.setAttribute('src', 'imagens/mulheradulta.png')
             } else {
                 //Idoso
-                img.setAttribute('src','imagens/mulheridosa.png')
+                img.setAttribute('src', 'imagens/mulheridosa.png')
             }
         }
         res.style.textAlign = 'Center'
