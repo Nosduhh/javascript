@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+body{
+    background-color: rgba(0, 0, 139, 0.733);
+}
+h1{
+    text-align: center;
+    color: white;
+    margin: 20px;
+    padding: 15px;
+}
+section{
+    background-color: bisque;
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    padding: 20px;
+}
+footer{
+    text-align: center;
+    color: white;
+    margin: 20px;
+    padding: 15px;
+}
