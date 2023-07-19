@@ -13,23 +13,23 @@
         <h1>Contador dinâmico</h1>
     </header>
     <section>
-        <div>
+        <div id="dados">
             <label for="inicio">Inicio:</label>
-            <input type="number" name="txtinicio" id="incio">
+            <input type="number" name="inicio" id="txtinicio">
         </div>
         <div>
             <label for="fim">Fim:</label>
-            <input type="number" name="txtfim" id="fim">
+            <input type="number" name="fim" id="txtfim">
         </div>
         <div>
             <label for="passo">Passo:</label>
-            <input type="number" name="txtpass" id="passo">
+            <input type="number" name="passo" id="txtpasso">
         </div>
         <div>
-            <input type="button" value="Contar" id="contador" onclick="Contar()">
+            <input type="button" value="Contar" id="contador" onclick="contar()">
         </div>
-        <div id="Contar">
-
+        <div id="resul">
+            <p>Preparando pra contar...</p>
         </div>
     </section>
     <footer>

@@ -37,9 +37,15 @@ input{
     border: none;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.74);
 }
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 input#contador{
     width: 30%;
     height: 30px;
+}
+input#contador:hover{
+    background-color: #de8f28a1;
 }
 div{
     margin: 10px;
