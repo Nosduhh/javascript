@@ -24,7 +24,7 @@ header {
 section {
     background-color: #B8DE28;
     width: 500px;
-    height: 350px;
+    height: 250px;
     padding: 15px;
     margin: auto;
     border-radius: 5px;
@@ -41,6 +41,7 @@ input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 input#contador{
+    
     width: 30%;
     height: 30px;
 }
