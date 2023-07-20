@@ -5,8 +5,8 @@ function tabuada() {
     if (num.value.length == 0) {
         window.alert('Por favor, digite um número')
     } else {
-        var n = Number(num.value)
-        var c = 1 
+        var n = Number(num.value) // conversão string para número.
+        var c = 1 // Inicialização da variavel, para estrutura de repetição.
         tab.innerHTML = ''
         while(c <= 10){
             var item = document.createElement('option')
