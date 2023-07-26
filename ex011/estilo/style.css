@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* Cores do projeto:
+  - Azul: #0D2FFF
+  - Azul claro: #0DFFCD 
+
+
+*/
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #0D2FFF;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+
+h1 {
+    text-shadow: 5px 5px 5px rgb(87, 81, 81);
+    font-size: 2.3em;
+}
+
+section {
+    background-color: #0DFFCD;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.644);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-shadow: 3px 3px 3px rgb(58, 57, 57);
+}
