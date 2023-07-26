@@ -1,7 +1,7 @@
 // Aqui vai o script 
 var num = document.querySelector('input#numero')
 var lista = document.querySelector('select#lista')
-var res = document.querySelectorAll('div#res')
+var res = document.querySelector('div#res')
 var valores = []
 
 function isNumero(n) {
@@ -24,6 +24,7 @@ function adicionar() {
         var itens = document.createElement('option')
         itens.text = `O Valor ${num.value} foi adicionado.`
         lista.appendChild(itens)
+        res.innerHTML = ''
     } else {
         window.alert('Valor invalido ou já encontrado na lista')
     }
@@ -34,10 +35,28 @@ function finalizar() {
     if (valores.length == 0) {
         window.alert('Valor vazio, porfavor tente digitar um número.')
     } else {
-        var total = valores.length
+        var tot = valores.length
+        var maior = valores[0]
+        var menor = valores[0]
+        var soma = 0
+        var media = 0
+        for (var pos in valores) {
+            soma += valores[pos]
 
-        res.innerHTMl = ''
-        res.innerHTMl += `<p>O total dos valores são ${total}</p>`
+            if (valores[pos] > maior) {
+                maior = valores[pos]
+            }
+            if (valores[pos] < menor) {
+                menor = valores[pos]
+            }
+        }
+        media = soma / tot
+        res.innerHTML = ''
+        res.innerHTML += `<p>O total de numeros cadastrados são ${tot}.</p>`
+        res.innerHTML += `O maior número é ${maior}.<br>`
+        res.innerHTML += `O menor número é ${menor}.<br>`
+        res.innerHTML += `A soma de todos os número são ${soma}.<br>`
+        res.innerHTML += `A media dos números são ${media}.`
     }
-    
+
 }
