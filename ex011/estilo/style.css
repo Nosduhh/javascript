@@ -31,13 +31,17 @@ h1 {
 }
 
 section {
-    background-color: #0DFFCD;
+    background-color: #0dffcfaf;
     width: 500px;
     height: 300px;
     margin: auto;
     padding: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.644);
+}
+select{
+    margin: 10px;
+    width: 150px;
 }
 
 footer {
